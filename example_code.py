@@ -11,15 +11,14 @@ def main():
     # this function calculates ...
 
     # input
-    diameter = float(input("Enter the diameter of your pizza (inches): "))
+    number = float(input("Enter a number: "))
 
     # process
-    sub_total = constants.LABOR + constants.RENT + (diameter * constants.COST_PER_INCH)
-    total = sub_total + (sub_total * constants.HST)
+    output = number + 1
 
     # output
     print("")
-    print("Your pizza will cost ${0:,.2f}".format(total))
+    print("Your answer is {0:,.2f}".format(output))
     print("\nDone.")
 
 
